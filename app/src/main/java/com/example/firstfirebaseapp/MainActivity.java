@@ -2,8 +2,10 @@ package com.example.firstfirebaseapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,7 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 777;
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                .requestIdToken("479402890376-t7m517td9f33qdrkvsdafgirds9pdcg8.apps.googleusercontent.com")
+                .requestIdToken("669635227954-e11uus6j1hnjlbb9rse1p1mjtq436rif.apps.googleusercontent.com")
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
+            Log.w("Warning", "signInResult:failed code=" + e.getStatusCode());
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
         }
     }
