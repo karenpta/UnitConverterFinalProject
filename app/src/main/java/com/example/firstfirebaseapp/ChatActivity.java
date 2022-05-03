@@ -18,6 +18,7 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.json.JSONObject;
 
@@ -120,5 +121,6 @@ public class ChatActivity extends AppCompatActivity {
         } catch (Exception e) {
 
         }
+
     }
 }

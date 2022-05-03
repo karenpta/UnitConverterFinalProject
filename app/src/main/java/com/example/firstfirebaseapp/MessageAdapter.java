@@ -37,7 +37,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageViewHolder> {
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
+                         if (task.isSuccessful()) {
                             messages = new ArrayList<>();
                             for (QueryDocumentSnapshot document : task.getResult())
                             {
