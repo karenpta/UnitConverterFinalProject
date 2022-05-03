@@ -73,7 +73,7 @@ public class  MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this,ChatActivity.class);
             i.putExtra("user",account);
             startActivity(i);
-            Toast.makeText(this, "Welcome" + account.getDisplayName(), Toast.LENGTH_LONG).show(); 
+            //Toast.makeText(this, "Welcome" + account.getDisplayName(), Toast.LENGTH_LONG).show();
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             Log.w("Warning", "signInResult:failed code=" + e.getStatusCode());

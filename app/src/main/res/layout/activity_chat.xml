@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAE8E0"
     tools:context=".ChatActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -42,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            android:backgroundTint="#D79EE1"
             android:hint="Message" />
     </com.google.android.material.textfield.TextInputLayout>
 
